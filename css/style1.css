@@ -1,3 +1,32 @@
 body{background-color: rgb(48, 176, 176);}
 
-p{background-color: rgba(0, 0, 0, 0.66); color:white}
+p{background-color: rgba(0, 0, 0, 0.66); 
+  color:white;
+  /* width: 200px; */
+  width: 50% ;
+}
+img{height:200px; 
+    border-style: solid;
+    border-color: rgb(23, 21, 116);
+    border-radius: 40px;
+    /* pading : 20px ; */
+    margin-left: 40%;
+}
+
+
+
+.premier{background-color: rgb(47, 255, 57);
+         width: 33%;
+         text-align:justify;
+}
+
+#deux{background-color: rgb(139, 20, 131);
+      width: 33%;
+      font-size : 20px;
+      font-family:Arial, Helvetica, sans-serif;
+}
+/* Beaucoup de site utilisent des fontes externes */
+
+div{
+    border: solid;
+}

@@ -66,4 +66,30 @@ balise `<link rel="stylesheet" href="NomDuFichier"`
 
 Il existe plus de 500 propriétés et encore davantage de valeur possible mais souvent, les valeurs sont :
 - des couleurs (soit un nom, soit un code comme rgb(0-255,0-255,0-255,))
-- 
+- des tailles : plusieurs unités sont possibles
+    - `px` pour pixels 
+    - `em` relatif à la taille de la police
+    - `%` relatif à la taille du contenant 
+
+Remarque : Quand le selecteur css est un élément HTML (par exemple `p`) alors les propiétés s'appliquent à tous les éléments du même type.
+
+Pour différencier des éléments de même nature, on peut utiliser l'attribut `class` ou `id`. Dans ce cas, le sélecteur est le nom de la classe précédé d'un `.` ou le nom de l'identifiant précédé d'un `#` .
+
+
+Remarque : le contenu d'un élément HTML suit le principe du modèle en boîte.
+[https://www.w3schools.com/css/css_boxmodel.asp](https://www.w3schools.com/css/css_boxmodel.asp)
+
+Trois propriétés importantes sont liés à ce modèle:
+- `border` pour le style de la bordure
+- `pading` pour l'espace interne
+- `margin` pour la marge autour de la bordure 
+
+
+Remarque: il existe des propriétés spécifiques au texte, en particulier :
+- `text-align` pour justifier le texte
+- `font` pour la police de caractères
+
+
+Il existe deux balises HTML universelles qui permettent de grouper des éléments ou du texte :
+-`<div></div>`
+-`<span></span>`
