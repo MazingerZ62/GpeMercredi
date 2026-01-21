@@ -3,49 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma deuxieme page</title>
-    <link rel="stylesheet" href="./css/style1.css">
+    <title>Test JS</title>
+    <link rel="stylesheet" href="./css/style2.css">
 </head>
 <body>
-   <!--Ceci est un commentaire--> 
-   <h2>titre de niveau 2</h2>
-   <h1>titre de niveau 1</h1>
-
-   <div><p class="premier">On remarque que le navigateur
-    créé un saut de ligne entre les titres, les paragraphes. <br>
-    Pour un saut de ligne dans un paragraphe, il faut ajouter un break.
-   </p>
-
-   <p id="deux">Pour afficher des symboles html dans une page, il existe des codes HTML. &lt;br&gt;   </p>
-</div>
-   
-   <p>
-    On peut faire des liens avec la balise &lt;a&gt;
-
-   <a class="premier " href="https://www.happy-beez.net/caracteres-speciaux-html/">
-    Voici mon lien
-   </a>
-   </p>
-
-   <p>
-    voici une liste sans ordre:
-    <ul>
-        <li>Fulguropoing</li>
-        <li>Rétrolaser</li>
-        <li>Cornofulgure</li>
-    </ul>
-   voici une liste avec ordre selon la puissance:
-<ol>
-    <li>Cornofulgure</li>
-    <li>Fulguropoing</li>
-    <li>Rétrolaser</li>
-</ol>
-   </p>
-
-   
-<img src="./img/goldorak_fond_d_ecran.jpeg.jpg">
+    
+    
+    <h1 class="t1">Jouons avec JS et les éléments HTML interactifs</h1>
+    <h1 class="t2">Voici un second titre</h1>
+    <form action="">
+        <input type="range" name="range" id="range" value="100"> 
+        <input type="button" value="Clique" id="btn">
+        <input type="checkbox" name="box" id="box">
+        <input type="text" name="text" id="text" value="Recherche">
 
 
+    </form>
+    <script>
+    let titre = document.querySelector(".t2");
+    let titre1 = document.querySelector(".t1");
 
+    titre1.addEventListener("mouseover", function(){
+        titre1.style.color = "green";
+    })
+    //console.log(titre.value);
+    
+    //let curseur = document.getElementById("range");
+    //console.log(curseur.value);
+
+    let pression = false;
+
+    let bouton = document.getElementById("btn");
+    bouton.addEventListener("click",function(){
+        
+        if(pression == false){titre.style.color = "red" ;
+            pression = true;
+            
+        }
+        else {titre.style.color = "blue" ;
+            pression = false;
+        }
+
+    });
+    </script>
 </body>
 </html>

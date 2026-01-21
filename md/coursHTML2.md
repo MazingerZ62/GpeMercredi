@@ -93,3 +93,61 @@ Remarque: il existe des propriétés spécifiques au texte, en particulier :
 Il existe deux balises HTML universelles qui permettent de grouper des éléments ou du texte :
 -`<div></div>`
 -`<span></span>`
+
+3.Javascript
+
+ctrl + shift + i pour accéder à la console (ou F12)
+
+Il s'agit d'un langage de programmation comme Python mais initialement dédié au WEB.
+
+C'est un langage prévu pour interagir avec une page HTML : le document peut se représenter 
+ainsi :
+
+*Image du DOM (Document Objet Modele)*
+
+
+Le JS permet de rendre une page HTML plus dynamique notamment grâce aux formulaires 
+`<form></form>`
+
+Les éléments HTML interactifs sont généralement des `<input type="">`
+- button
+- checkbox
+- text
+- range
+- password
+
+
+Pour écrire du Js on utilise les balises `<script></script>` et : 
+- on écrit directement le code dans le fichier HTML
+- on écrit le code dans un fichier  .js
+
+
+Pour attraper un élément sur la page afin de le manipuler avec JS , on peut utiliser : 
+-`querySelector()`
+- `getElementById()`
+
+
+On écrira :
+```js
+let elementHTML = document.querySelector(""); //avec un sélecteur css
+let elementHTML = document.getElementById(""); // avec un id
+```
+
+La plupart des éléments HTML interactifs ont une propriété `value`.
+
+```js
+console.log(elementHTML.value);
+```
+
+Js est capable d'associer un évènement à un élément HTML :
+- click
+- change
+- input
+- mouseover
+- ...
+
+On utilise la méthode `addEventListener()`
+
+```js
+elementHTML.addEventListener("event", function(){}); // faire quelquechose
+```
