@@ -1,3 +1,33 @@
-h1{
-    color:blue;
+.t1{color:blue;
+    font-size: 50px;
+    background-color: aliceblue;
+
+}
+
+body{background-color: rgb(15, 160, 109);}
+
+.btn{
+        margin-top: 100px;
+        margin-top: 50px;
+}
+
+
+#addbtn{
+        margin-left: 150px;
+        margin-right: 100px;
+}
+
+#sousbtn{
+        margin-left: 100px;
+        margin-right: 150px;
+}
+
+#mulbtn{
+        margin-left: 150px;
+        margin-right: 150px;
+}
+
+#sousbtn{
+        margin-left: 150px;
+        margin-right: 150px;
 }
