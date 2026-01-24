@@ -8,7 +8,6 @@ body{background-color: rgb(15, 160, 109);}
 
 .btn{
         margin-top: 100px;
-        margin-top: 50px;
 }
 
 
@@ -17,17 +16,42 @@ body{background-color: rgb(15, 160, 109);}
         margin-right: 100px;
 }
 
+#imgplus{
+        width:200px;
+        margin-left: 7%;
+
+
+}
+
 #sousbtn{
+        margin-left: 100px;
+        margin-right: 100px;
+}
+
+#imgsous{
+        width:200px;
+        margin-left: 5%;
+
+}
+
+
+#mulbtn{
+        margin-left: 100px;
+        margin-right: 100px;
+}
+
+#imgmul{
+        width:180px;
+        margin-left: 7%;
+}
+
+
+#divbtn{
         margin-left: 100px;
         margin-right: 150px;
 }
 
-#mulbtn{
-        margin-left: 150px;
-        margin-right: 150px;
-}
-
-#sousbtn{
-        margin-left: 150px;
-        margin-right: 150px;
+#imgdiv{
+        width:200px;
+        margin-left:7%;
 }
