@@ -25,4 +25,4 @@ let a = getRandomInt(5)
 let b = getRandomInt(5)
 let r = a + b 
 
-if(r)
+console.log(r)

@@ -61,13 +61,42 @@ Syntaxe générale:    `nom --option argument` ou `nom -option argument`
 |`mkdir`|créer un dossier *vide*|`$ mkdir monDossier`|
 |`nano`|éditer un fichier|`$ nano monfichier`|
 |`cat`|affiche le contenu des fichiers |`$ cat monfichier`|
-
-
+|`history`|affiche l'historique des commandes|`$ hisory`|
+|`tree`|affiche l'arborescence du dossier courant `./`|`$ tree`|
+|`pwd`|affiche le chemin absolu vers le dossier courant `./`|`$ pwd`|
+|`cd`|change le dossier courant |`$ cd *chemin abs ou rel*`|
+|`cp`|copîer une source vers une destination|`$ cp <source> <destination>`|
+|`rm`|supprimer des dossiers ou des fichiers|`$ rm -r<chemin>`|
+|`move`|couper ou renommer des fichiers|`$ mv <source> <destination>`|
 
 ---------------
 Pour éditer un fichier plusieurs commandes/éditeurs sont possibles :
 - `nano` (dans ce cours)
 - `vi`
 - `emacs`
+-------------------------
+Dans la console, `./` est falcultatif
+
+-------------------------
+On peut rappeler une commande à partir de son numéro dans l'historique:
+```bash
+$ !n
+```
+--------------------------------------
+Le chemin absolu vers un fichier ou un dossier est le chemin depuios la racine (*root*) `/` : par exemple `/workspaces/GpeMercredi`.
+
+Un chemin relatif commence pas `./` ou `../` : on part du dossier courant.
 
 
+La maison de l'utilisateur (`/home/utilisateur` ou `~`) est accessible avec la commande `cd` sans argument.
+
+------------------------------------
+La commande `cp` peut copioer et renommer. 
+
+```bash
+$ cp cheminVersFichier cheminVersDossier/
+```
+
+```bash
+$ cp cheminVersFichier cheminVersDossier/NouveauNom
+```
