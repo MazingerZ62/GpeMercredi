@@ -10,3 +10,10 @@
     height: 70%;
 
 }
+#tb{
+    color: white;
+    text-align:center; 
+    border-top: 49%;
+}
+
+body{background:linear-gradient(red,rgb(210, 3, 3),rgb(173, 0, 0),rgb(94, 2, 2),rgb(0, 0, 0));}
