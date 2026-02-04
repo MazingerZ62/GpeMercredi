@@ -34,3 +34,28 @@
 - Appliquer la commande `sort` à `fic3.txt` et commenter.
 - Afficher le nombre de lignes et de mots dans `fic3.txt`
 - Afficher tous les fichiers et dossiers cachés du répertoire `/workspaces/web2026`
+
+
+------------------
+## correction
+- pwd
+- ls
+- mkdir ./Dossier1
+- ls => Le nom Dossier1 apparait surligné en vert
+- cd ./Dossier1
+- pwd
+- touch ./fic1.txt
+- cd ../ ou cd /workspaces/GpeMercredi
+- ls -F ajoute un slash après les dossiers
+- cp ./Dossier1/fic1.txt ./Dossier1/fic2.txt puis cp ./Dossier1/fic1.txt ./fic3.txt
+- mv ./Dossier1/fic1.txt ./Dossier1/fichierNSI  (Les extensions de fichiers ne sont pas obligatoires)
+- tree
+- cd ../ && pwd (on enchaine les commandes) : On est remonté d'un range dans l'arboresence
+- rmdir ne supprime que des dossiers vides
+- rm -i pose une question avant chaque opération
+- mkdir ./DA ./DA/DB ./DA/DC && tree
+- cd ./DA/DC && pwd
+- cd ../../ pour remonter de deux rangs
+- On peut éditer le fichier avec nano pour écrire les lignes ou utiliser echo avec l'option -e
+    echo -e "J'aime la NSI
+> J'aime la NSI" > ./fic3.txt

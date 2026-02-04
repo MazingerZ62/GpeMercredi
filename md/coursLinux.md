@@ -69,7 +69,10 @@ Syntaxe générale:    `nom --option argument` ou `nom -option argument`
 |`rm`|supprimer des dossiers ou des fichiers|`$ rm -r<chemin>`|
 |`move`|couper ou renommer des fichiers|`$ mv <source> <destination>`|
 |`echo`|affiche un texte sur la sortie standard|`$ echo "<texte>"`|
-|`chmod`|change les permissions des fichier/dossiers`$ chmod nnn monfichier`|
+|`chmod`|change les permissions des fichier/dossiers |`$ chmod nnn monfichier`|
+|`head`|affiche les premières lignes d'un fichier|`$ chmod nnn monfichier`|
+|`tail`|affiche les dernières lignes d'un fichier|`$ chmod nnn monfichier`|
+|`grep`|attrape une chaine dans un fichier|`$ grep chaine monfichier`|
 
 ---------------
 Pour éditer un fichier plusieurs commandes/éditeurs sont possibles :
@@ -126,16 +129,23 @@ CODE chmod :
 
 |code decimal|r(right)|w(wright)|x(execute)|
 |------------|--------|---------|----------|
-|4|1|0|0|
-|2|0|1|0|
-|1|0|0|1|
+|      4     |    1   |    0    |    0     |
+|      2     |    0   |    1    |    0     |
+|      1     |    0   |    0    |    1     |
 
 
-La commande `chmod nnn` permet de modifier les permissions; il existe une autre syntaxe evc les lettres `u,g,o` (user,group,other) et les symboles `+,-` pour ajouter ou retirer des droits.
+La commande `chmod nnn` permet de modifier les permissions; il existe une autre syntaxe avec les lettres `u,g,o` (user,group,other) et les symboles `+,-` pour ajouter ou retirer des droits.
 
 ```bash
 chmod 754 ./monfichier           # rwx pour user, rx pour group, r pour other
 chmod u-x,g+rw,o+w ./monfichier  # retire x pour user, ajoute rw pour group, ajoute w pour other
 ```
 
-Le symbole `>` ou `>>` permet de *rediriger* la sortie d'une commande vers un fichier. Si ce fichier n'existe pas, alors il est créé.
+Le symbole `>` ou `>>` permet de *rediriger* la sortie d'une commande vers un fichier. Si ce fichier n'existe pas, alors il est créé. `>>` n'écrase pas et ajoute à la suite.
+
+
+------------------------------------
+
+Les fichiers python `.py` ne sont pas des fichiers éxécutables dans le shell. Il faut un programme pour les éxecuter : `python .:monFichier.py`
+
+Ex1 :https://codex.forge.apps.education.fr/exercices/course_cycliste/
