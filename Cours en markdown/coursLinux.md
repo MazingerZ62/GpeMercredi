@@ -70,9 +70,10 @@ Syntaxe générale:    `nom --option argument` ou `nom -option argument`
 |`move`|couper ou renommer des fichiers|`$ mv <source> <destination>`|
 |`echo`|affiche un texte sur la sortie standard|`$ echo "<texte>"`|
 |`chmod`|change les permissions des fichier/dossiers |`$ chmod nnn monfichier`|
-|`head`|affiche les premières lignes d'un fichier|`$ chmod nnn monfichier`|
-|`tail`|affiche les dernières lignes d'un fichier|`$ chmod nnn monfichier`|
+|`head`|affiche les premières lignes d'un fichier|`$ head monfichier`|
+|`tail`|affiche les dernières lignes d'un fichier|`$ tail nnn monfichier`|
 |`grep`|attrape une chaine dans un fichier|`$ grep chaine monfichier`|
+|`find`|recherche un fichier dans une arborescence|`$ ./ -name <monfichier>`|
 
 ---------------
 Pour éditer un fichier plusieurs commandes/éditeurs sont possibles :
@@ -149,3 +150,15 @@ Le symbole `>` ou `>>` permet de *rediriger* la sortie d'une commande vers un fi
 Les fichiers python `.py` ne sont pas des fichiers éxécutables dans le shell. Il faut un programme pour les éxecuter : `python .:monFichier.py`
 
 Ex1 :https://codex.forge.apps.education.fr/exercices/course_cycliste/
+
+
+Le *file globing* : la recherche de fichiers avec une *wildcard*
+
+On peut agir (`find`, `cp`, `rm`, ...) sur des fichiers sans en connaitre le nom exact
+
+|wildcard|signification|exemple|
+|--------|-------------|-------|
+|`*`|autant de caractères que l'on veut|`ls f*`(liste tout les fichiers qui commencent par un f)|
+|`?`|exactement un seul caractères|`ls file?.txt`|
+|[]|un des caractères dans la liste|`ls file[123]*`|
+|`[!a-r]`| un caractère qui n'est pas dans la liste|`ls file[!23]*`|
