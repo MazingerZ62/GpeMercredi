@@ -73,7 +73,7 @@ Syntaxe générale:    `nom --option argument` ou `nom -option argument`
 |`head`|affiche les premières lignes d'un fichier|`$ head monfichier`|
 |`tail`|affiche les dernières lignes d'un fichier|`$ tail nnn monfichier`|
 |`grep`|attrape une chaine dans un fichier|`$ grep chaine monfichier`|
-|`find`|recherche un fichier dans une arborescence|`$ ./ -name <monfichier>`|
+|`find`|recherche un fichier dans une arborescence|`$ find ./ -name <monfichier>`|
 
 ---------------
 Pour éditer un fichier plusieurs commandes/éditeurs sont possibles :
